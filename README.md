@@ -14,6 +14,8 @@ Clone this git repository
 
 git clone https://github.com/BizzoTL/MICROPHERRET/
 
+The files needed to run the scripts can be retrieved here:  https://mega.nz/folder/FAVSRYTT#ElNlwvpSMuXSZu9NDoIp3w
+
 ## Usage
 
 For simply predicting the functions of your genome of interest you need to have the .annotations file from EggNOG. Run "get_annotation_matrix.ipynb" and specify the folder where the files are locates. After obtaining the output, run "predict_functions.py".
