@@ -25,8 +25,11 @@ To generate a new class, follow the instructions in "create_new_class.py". The i
 
 Parameters to use:
 '-g' Folder containing the genomes that will be used for model training
+
 '--from_faprotax' Dataset of genomes and functions from FAPROTAX
+
 '-f'Function-specific classifier that will be train with the genomes
+
 '-r' Genomes that we want to remove from previous training set
 
 Example:
