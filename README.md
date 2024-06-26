@@ -17,9 +17,13 @@ git clone https://github.com/BizzoTL/MICROPHERRET/
 The files needed to run the scripts can be retrieved here:  https://mega.nz/folder/FAVSRYTT#ElNlwvpSMuXSZu9NDoIp3w
 
 ## Usage
+### Functional prediction
+For simply predicting the functions of your genome of interest you need to provide the .annotations file from EggNOG. In the MICROPHERRET folder, put the annotations of your genomes or MAGs in a folder called "annotations". Run "get_annotation_matrix.ipynb" and specify the folder where the files are located. After obtaining the output, called "ko_df_all.csv", run "predict_functions.py" from the "annotation" folder. The script takes two arguments, the user-generated annotation matrix and the matrix containing functions as columns and genomes as rows (function_db.csv) to check the prediction results. 
 
-For simply predicting the functions of your genome of interest you need to have the .annotations file from EggNOG. Run "get_annotation_matrix.ipynb" and specify the folder where the files are located. After obtaining the output, run "predict_functions.py".
+Example:
+python predict_functions.py -i ko_df_all.csv -f function_db.csv
 
+### Class generation
 
 To generate a new class, follow the instructions in "create_new_class.py". The inputs required to run the file are .annotations files from EggNOG for all the genomes to be included in the model. The script will then open and parse annotations files and from each .annotations file it retrieves the KOs. Those are stored in a dictionary with KOs as keys and copy numbers as values. The dictionary is then used with the main script KO matrix to train the different machine-learning algorithms and after selecting the best-performing model it saves it. The resulting model and scaler can then be added to the folder containing MICROPHERRET models.
 
@@ -35,4 +39,5 @@ Parameters to use:
 Example:
 python create_new_class.py -g genomes_folder/ --from_faprotax faprotax_annotation_matrix -f new_function -r genomes_to_remove
 
+After creating the class, add the saved model and scaler with the others in the MICROPHERRET folder to run your predictions.
 
