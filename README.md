@@ -4,19 +4,21 @@ MICROPHERRET: MICRObial PHEnotypic tRait ClassifieR using machine lEarning Techn
 ## Installation
 Create a conda environment with Python 3.9 and packages:
 
-'conda create -n microrferret python=3.9 pandas biopython scikit-learn=1.1.2 numpy tensorflow tensorflow_addons pip install tensorflow-addons'
+```conda create -n microrferret python=3.9 pandas biopython scikit-learn=1.1.2 numpy tensorflow tensorflow_addons pip install tensorflow-addons```
 
 To enter the environment:
 
-'''
+```
 conda activate micropherret
-'''
+```
 
 Clone this git repository
 
-'git clone https://github.com/BizzoTL/MICROPHERRET/'
+```git clone https://github.com/BizzoTL/MICROPHERRET/```
 
 The files needed to run the scripts can be retrieved here:  https://mega.nz/folder/FAVSRYTT#ElNlwvpSMuXSZu9NDoIp3w
+
+To run the scripts, create a folder called "MICROPHERRET" and add the files and script into it.
 
 ## Usage
 ### Functional prediction
