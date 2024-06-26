@@ -8,7 +8,9 @@ Create a conda environment with Python 3.9 and packages:
 
 To enter the environment:
 
-'''conda activate micropherret'''
+'''
+conda activate micropherret
+'''
 
 Clone this git repository
 
