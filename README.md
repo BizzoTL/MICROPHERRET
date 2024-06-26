@@ -26,6 +26,8 @@ For simply predicting the functions of your genome of interest you need to provi
 Example:
 python predict_functions.py -i ko_df_all.csv -f function_db.csv
 
+The resulting .csv file contains the genomes used in input as rows and the prediction for each functional class of MICROPHERRET in the columns. If the prediction is positive and the genome performs a particular function, a "1" is present in the cell, otherwise a "0".
+
 ### Class generation
 
 To generate a new class, follow the instructions in "create_new_class.py". The inputs required to run the file are .annotations files from EggNOG for all the genomes to be included in the model. The script will then open and parse annotations files and from each .annotations file it retrieves the KOs. Those are stored in a dictionary with KOs as keys and copy numbers as values. The dictionary is then used with the main script KO matrix to train the different machine-learning algorithms and after selecting the best-performing model it saves it. The resulting model and scaler can then be added to the folder containing MICROPHERRET models.
