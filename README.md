@@ -46,3 +46,9 @@ python create_new_class.py -g genomes_folder/ --from_faprotax faprotax_annotatio
 
 After creating the class, add the saved model and scaler with the others in the MICROPHERRET folder to run your predictions.
 
+#### Class generation example: acetoclastic methanogenesis
+The code to run the example class generation script is available with the other files in the "Example" folder. After installing MICROPHERRET and activating the environment, simply run create_new_class.py from the folder to obtain the classifiers fro the acetoclastic methanogenesis functional class. The exact command to run is the following:
+```
+python3 create_new_class.py -g annotations/ --from_faprotax my_faprotax_db.csv  -f acetoclastic_methanogenesis
+```
+The resulting files will be the .sav and .scaler models that need to be put into the model folder in order to predict MICROPHERRET functions.
