@@ -4,7 +4,7 @@ MICROPHERRET: MICRObial PHEnotypic tRait ClassifieR using machine lEarning Techn
 ## Installation
 Create a conda environment with Python 3.9 and packages:
 ```
-conda create -n microrferret python=3.9 pandas biopython scikit-learn=1.1.2 numpy tensorflow tensorflow_addons
+conda create -n micropherret python=3.9 pandas biopython scikit-learn=1.1.2 numpy tensorflow tensorflow_addons
 pip install tensorflow-addons
 ```
 To enter the environment:
