@@ -19,6 +19,9 @@ The files needed to run the scripts can be retrieved here:  https://mega.nz/fold
 
 To run the scripts, create a folder called "MICROPHERRET" and add the files and script into it.
 
+## Requirements
+Random forest models were saved in .sav files with the parameter n_job set to 6 or fewer. Consequently, training MICROPHERRET requires at least 6 CPUs. To modify this parameter, users can retrain and optimize the models by following the previously described procedure.
+
 ## Usage
 ### Functional prediction
 For simply predicting the functions of your genome of interest you need to provide the .annotations file from EggNOG. In the MICROPHERRET folder, put the annotations of your genomes or MAGs in a folder called "annotations". Run "get_annotation_matrix.ipynb" and specify the folder where the files are located. After obtaining the output, called "ko_df_all.csv", run "predict_functions.py" from the "annotation" folder. The script takes two arguments, the user-generated annotation matrix and the matrix containing functions as columns and genomes as rows (function_db.csv) to check the prediction results. 
