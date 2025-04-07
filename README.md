@@ -93,3 +93,10 @@ The code to run the script is available with the other files in the "Example" fo
 python3 create_new_class.py -g annotations/ --from_faprotax my_faprotax_db.csv  -f acetoclastic_methanogenesis 
 ```
 The resulting files will be the .sav and .scaler models that need to be put into the model folder in order to predict MICROPHERRET functions.
+
+## Citation
+
+If you use MICROPHERRET, please cite:
+
+Bizzotto, E., Fraulini, S., Zampieri, G. et al. MICROPHERRET: MICRObial PHEnotypic tRait ClassifieR using Machine lEarning Techniques. Environmental Microbiome 19, 58 (2024). https://doi.org/10.1186/s40793-024-00600-6
+
