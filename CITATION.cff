@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Bizzotto"
+  given-names: "Edoardo"
+  orcid: "https://orcid.org/0009-0006-9948-9986"
+- family-names: "Fraulini"
+  given-names: "Sofia"
+  orcid: "https://orcid.org/0009-0004-2407-8643"
+- family-names: "Zampieri"
+  given-names: "Guido"
+  orcid: "https://orcid.org/0000-0002-4518-5913"
+- family-names: "Orellana"
+  given-names: "Esteban"
+  orcid: "https://orcid.org/0000-0003-4899-0915"  
+- family-names: "Treu"
+  given-names: "Laura"
+  orcid: "https://orcid.org/0000-0002-5053-4452"
+- family-names: "Campanaro"
+  given-names: "Stefano"
+  orcid: "https://orcid.org/0000-0002-9431-1648"  
+type: article
+title: "MICROPHERRET: MICRObial PHEnotypic tRait ClassifieR using Machine lEarning Techniques"
+journal: "Environmental Microbiome"
+doi: 10.1186/s40793-024-00600-6
+date-released: 2017-12-18
+url: "https://doi.org/10.1186/s40793-024-00600-6"
+month: 8
+start: 58
+issue: 1
+volume: 19
+year: 2024
